@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>311 data visulization</title>
+
+    <style>
+        table, th, td {
+
+            border-collapse: collapse;
+            font-weight: bold;
+            border: 1px solid black;
+
+        }
+        th, td {
+            padding: 5px;
+            text-align: right;
+
+        }
+        .xg{
+            display: inline-block;
+            padding: 1.75%;
+        }
+    </style>
+
+</head>
+<body>
+<h3>Yearly analysis comparing different cities</h3>
+<div >
+    <button class="btn btn-primary" data-ng-click = "myfunction6(use)"> Click to get results</button>
+</div>
+
+<div id="hideData" style="display: none">
+<div class="xg">
+
+    <h2>KANSAS CITY</h2>
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>no. of requests</th>
+        </tr>
+        <tr ng-repeat="user in data7k">
+            <td>{{user.creation_year}}</td>
+            <td>{{user.count_case_id}}</td>
+        </tr>
+    </table>
+</div>
+<div class="xg"> <h2>AUSTIN</h2>
+
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>no. of requests</th>
+        </tr>
+        <tr ng-repeat="user1 in data7A">
+            <td>{{user1.year}}</td>
+            <td>{{user1.count}}</td>
+        </tr>
+    </table>
+
+</div>
+
+<div class="xg"> <h2>SAN FRANCISCO</h2>
+
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>no. of requests</th>
+        </tr>
+        <tr ng-repeat="user1 in data7S">
+            <td>{{user1.year}}</td>
+            <td>{{user1.count}}</td>
+        </tr>
+    </table>
+
+</div>
+
+<div class="xg"> <h2>CINCINNATI</h2>
+
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>no. of requests</th>
+        </tr>
+        <tr ng-repeat="user1 in data7C">
+            <td>{{user1.year}}</td>
+            <td>{{user1.count}}</td>
+        </tr>
+    </table>
+
+</div>
+<div class="xg"> <h2>CHATTANOOGA</h2>
+
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>no. of requests</th>
+        </tr>
+        <tr ng-repeat="user1 in data7CH">
+            <td>{{user1.year}}</td>
+            <td>{{user1.count_1}}</td>
+        </tr>
+    </table>
+
+</div>
+
+<div class="xg"> <h2>NEW ORLEANS</h2>
+
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>no. of requests</th>
+        </tr>
+        <tr ng-repeat="user1 in data7N">
+            <td>{{user1.year}}</td>
+            <td>{{user1.count}}</td>
+        </tr>
+    </table>
+
+</div>
+</div>
+</body>
+</html>

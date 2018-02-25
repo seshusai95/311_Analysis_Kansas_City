@@ -1,0 +1,38 @@
+<html data-ng-app="app">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="angular-route.min.js"></script>
+    <script src="app.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body ng-controller="MainCtrl">
+
+  <div style=" background-color:transparent;left: 5%; right: 5%; bottom: 5%; top: 5%; position: absolute">
+      <h1 style="color:#ff323d "> 311 Call Service Request Data Visualization </h1>
+    <button class="button" onclick="window.location.href='#/firstPage'">Home</button>
+    <button class="button button1" onclick="window.location.href='#/secondPage'">Yearly</button>
+    <button class="button button2" onclick="window.location.href='#/thirdPage'">ZipCode</button>
+    <button class="button button3" onclick="window.location.href='#/fourthPage'">Category</button>
+    <button class="button button4" onclick="window.location.href='#/fifthpage'">City Comparison</button>
+    <button class="button button5" onclick="window.location.href='#/sixpage'">Development</button>
+
+  <div ng-view></div>
+
+
+  </div>
+
+  <div class="umkc-image">
+
+    <img src="image1.jpeg" height="125" width="125">
+
+  </div>
+
+  <h2 style="float:right;top:10px;position: relative;right:1px;color: darkcyan"> DANS LAB</h2>
+  <p style="float:right;top:60px;position: relative;color: darkcyan;right: -150px"> (Data-Algorithms-Network Systems-Security)</p>
+
+  </body>
+</html>
